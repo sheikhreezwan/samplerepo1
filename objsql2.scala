@@ -17,11 +17,11 @@ case class customer (custid:Int,firstname:String,lastname:String,city:String,age
 SQLContext is a class and is used for initializing the functionalities of Spark SQL. 
 SparkContext class object (sc) is required for initializing SQLContext class object.
  */
-    /*val conf = new SparkConf().setAppName("SQL1").setMaster("local[*]")
+    val conf = new SparkConf().setAppName("SQL1").setMaster("local[*]")
     val sc = new SparkContext(conf)
     val sqlc = new SQLContext(sc)
     sc.setLogLevel("ERROR");
-*/
+
 /*Spark 2.x, we have a new entry point for DataSet and Dataframe API’s called as Spark Session.
 SparkSession is essentially combination of SQLContext, HiveContext and future StreamingContext. 
 All the API’s available on those contexts are available on spark session also. 
